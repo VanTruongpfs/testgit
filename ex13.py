@@ -6,10 +6,9 @@ T=0
 for i in range(1,n+1):
     if i <= n:
         s = n%i
-        if s==0:
-            if i%2 == 0:
-                T=T+i
-                i=i+1
+        if s==0 and i%2 ==0:
+            T=T+i
+            i=i+1
         else:
             i=i+1
 if T==0:
